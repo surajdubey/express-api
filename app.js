@@ -12,6 +12,7 @@ var login = require('./routes/login');
 var getUserInfo = require('./routes/getUserInfo');
 var dummy_ok_request = require('./routes/dummy_ok_request');
 var dummy_list_data = require('./routes/dummy_list_data');
+var checkUserRegistration = require('./routes/check_user_registration');
 
 var cors = require('cors');
 
@@ -37,6 +38,7 @@ app.use('/login', login);
 app.use('/getUserInfo', getUserInfo);
 app.use('/dummy_ok_request', dummy_ok_request);
 app.use('/dummy_list_data', dummy_list_data);
+app.use('/checkUserRegistration', checkUserRegistration);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
